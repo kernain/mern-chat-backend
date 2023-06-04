@@ -7,7 +7,7 @@ dotenv.config();
 const ws = require("ws");
 const jwtSecret = process.env.JWT_SECRET;
 const jwt = require("jsonwebtoken");
-const fs = require("fs")
+
 app.use(
   cors({
     credentials: true,

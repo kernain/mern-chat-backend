@@ -13,7 +13,7 @@ console.log(process.env.CLIENT_URL)
 app.use(
   cors({
     credentials: true,
-    origin: process.env.CLIENT_URL,
+    origin: "https://mern-chat-frontend-dusky.vercel.app",
   })
 );
 

@@ -24,10 +24,9 @@ db.connection
 
 app.use(express.json());
 app.use(cookieParser());
-app.use('/uploads', express.static(__dirname + "/uploads"))
 app.use("/", require("./routes/index.js"));
 
-const server = app.listen(4000);
+const server = app.listen(process.env.PORT || 4000);
 
 const wss = new ws.WebSocketServer({ server });
 wss.on("connection", (connection, req) => {

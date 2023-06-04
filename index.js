@@ -15,6 +15,10 @@ app.use(
   })
 );
 
+app.get("/", (req, res) => {
+  res.send("<h1>Working Fine</h1>");
+});
+
 const db = require("./config/db");
 const Messages = require("./models/Message");
 

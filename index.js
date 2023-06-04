@@ -8,6 +8,8 @@ const ws = require("ws");
 const jwtSecret = process.env.JWT_SECRET;
 const jwt = require("jsonwebtoken");
 
+console.log(process.env.CLIENT_URL)
+
 app.use(
   cors({
     credentials: true,
